@@ -1,8 +1,6 @@
 'use client';
-import { MusicalNoteIcon } from '@heroicons/react/24/solid';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react';
-import AudioPlay from './AudioPlay';
 import Image from 'next/image';
 
 export default function SampleButton() {
@@ -71,34 +69,6 @@ export default function SampleButton() {
         className="hidden group w-full items-end justify-center md:justify-end rounded md:max-w-[460px] "
       >
         {' '}
-        {!isPlaying && (
-          <>
-            <div className="hidden md:flex items-center justify-center gap-2 dark:text-gray-200">
-              <p className="text-sm text-gray-500 text-center p-1 dark:text-gray-200">
-                Listen to a sample?
-              </p>
-
-              <div className="p-2 bg-gray-100 group-hover:bg-gray-200 dark:bg-gray-700 dark:group-hover:bg-gray-600 rounded-full">
-                <MusicalNoteIcon className="h-8 w-8 text-gray-500 dark:text-gray-200" />
-              </div>
-            </div>
-
-            <div className="flex md:hidden items-center justify-center gap-2">
-              <div className="text-gray-500 dark:text-gray-200 p-2 bg-gray-100 group-hover:bg-gray-200 dark:bg-gray-700 dark:group-hover:bg-gray-600 rounded-full">
-                Listen to a sample?
-              </div>
-            </div>
-          </>
-        )}
-        {isPlaying && (
-          <AudioPlay
-            ref={audioRef}
-            src="/music/wall-of-stone.mp3"
-            type="audio/mpeg"
-            className="w-full"
-            controls
-          />
-        )}
       </button>
       {/* Enjoy our music? Like our page on facebook */}
     </div>
