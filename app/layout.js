@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import GoogleAnalytics from './components/GoogleAnalytics';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import NavBar from './NavBar';
+import SampleButton from '@/components/SampleButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,7 +16,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GoogleAnalytics />
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <NavBar />
+        <div>{children}</div>
+        <footer className="flex flex-col items-center justify-center w-full h-24 border-t mt-16 mb-8 pt-20 pb-24 gap-4">
+          <p>© 2024 Donna Wolf Violin</p>
+          <p className="text-sm text-gray-500">
+            Website designed and made by{' '}
+            <a
+              href="https://jrwolf.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600"
+            >
+              Jonathan Wolf
+            </a>
+          </p>
+        </footer>
+
+        <SampleButton />
+      </body>
     </html>
   );
 }
