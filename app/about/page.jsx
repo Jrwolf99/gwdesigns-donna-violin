@@ -20,10 +20,9 @@ export default function AboutUsPage() {
             </p>
             <div className="bg-gray-500 rounded-lg my-10 h-1 hidden md:block md:w-48" />
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Music is her passion! She is electrified and wireless and when
-              needed can go table to table and/or person to person! Please call
-              and arrange for a booking and have Donna’s delicate, elegant, and
-              fun fiddle create a magical mood for your next event!
+              Music is her passion! With a wireless setup, she can easily move
+              from table to table. Book Donna and let her elegant and fun fiddle
+              create a magical atmosphere for your event!
             </p>
           </div>
           <Image

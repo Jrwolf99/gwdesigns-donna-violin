@@ -1,12 +1,15 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const [textVisible, setTextVisible] = useState(false);
+  const [contentVisible, setContentVisible] = useState(false);
 
   useEffect(() => {
     setTextVisible(true);
+    setTimeout(() => setContentVisible(true), 1000); // Adjust delay as needed
   }, []);
 
   return (
@@ -18,13 +21,15 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="z-0 object-right"
+          className="z-0 object-center md:object-right"
           priority
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <div
             className={`transform transition-transform duration-[2000ms] ${
-              textVisible ? '-translate-x-[50%]' : '-translate-x-[200%]'
+              textVisible
+                ? 'translate-x-0 md:-translate-x-[50%]'
+                : '-translate-x-[200%]'
             } p-4 md:p-8 rounded-lg flex flex-col items-center`}
             style={{ marginTop: '-10vh' }}
           >
@@ -36,6 +41,37 @@ export default function Home() {
               Professional Violinist
             </p>
           </div>
+          <p
+            className={`max-w-[800px] text-lg md:text-xl text-white text-center mt-8 p-5 bg-black bg-opacity-20 rounded-lg shadow-lg transition-opacity duration-1000 ${
+              contentVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            Donna Wolf, a skilled violinist from Memphis, TN, offers a diverse
+            range of musical styles for your event, including Celtic, Bluegrass,
+            Folk, Rock, Christian, and Classical. Her performances add a special
+            touch to any occasion.
+          </p>
+          <div
+            className={`flex flex-row items-center justify-center mt-8 space-x-4 transition-opacity duration-1000 ${
+              contentVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Link
+              href="/contact"
+              className="px-6 py-2 bg-purple-600 text-white text-lg
+              font-semibold rounded-lg shadow-md hover:bg-purple-500
+              transition-colors duration-300"
+            >
+              {' '}
+              Book Now
+            </Link>
+            <Link
+              href="/about"
+              className="px-6 py-2 bg-opacity-70 bg-gray-700 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-gray-600 transition-colors duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
 
         <style jsx>{`
@@ -43,16 +79,6 @@ export default function Home() {
             font-family: 'Dancing Script', cursive;
           }
         `}</style>
-      </div>
-      <div className="w-full p-4 md:p-8 text-center">
-        <p className=" md:text-lg mt-6 px-4 md:px-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
-          amet accumsan tortor. Curabitur non nulla sit amet nisl tempus
-          convallis quis ac lectus. Cras ultricies ligula sed magna dictum
-          porta. Praesent sapien massa, convallis a pellentesque nec, egestas
-          non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla
-          porttitor accumsan tincidunt.
-        </p>
       </div>
     </div>
   );

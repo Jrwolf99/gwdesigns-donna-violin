@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <GoogleAnalytics />
 
-      <body className={inter.className}>
+      <body className={`font-sans text-black bg-white ${inter.className}`}>
         <NavBar />
         <div>{children}</div>
         <footer className="flex flex-col items-center justify-center w-full h-24 border-t mt-16 mb-8 pt-20 pb-24 gap-4">
