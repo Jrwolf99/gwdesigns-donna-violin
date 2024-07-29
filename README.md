@@ -1,3 +1,3 @@
 # Donna Wolf Violin Website
 
-This is a website for Donna Wolf, the violinist.  
+This is a website for Donna Wolf, the violinist.
