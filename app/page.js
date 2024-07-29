@@ -17,8 +17,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <div className="min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center relative">
+    <div className="bg-black">
+      <div className="min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center relative max-w-[1500px] mx-auto">
         <Image
           src="/images/donna_portraits/lights_lookingup.jpg"
           alt="Background"
