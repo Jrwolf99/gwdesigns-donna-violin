@@ -11,7 +11,7 @@ export default function NavBar() {
   const path = usePathname();
 
   const menuBarStyles =
-    'block w-full h-[2.5px] rounded-full bg-black transition-all duration-300 ease-in-out';
+    'block w-full h-[2.5px] rounded-full bg-white transition-all duration-300 ease-in-out';
   return (
     <nav className="py-4 relative w-full">
       <div className="flex justify-between items-center py-2 px-5">
