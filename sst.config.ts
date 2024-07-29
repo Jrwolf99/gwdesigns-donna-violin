@@ -3,7 +3,7 @@ export default $config({
   app(input) {
     return {
       name: "gwdesigns-donna-violin",
-      removal: input?.stage === "production" ? "retain" : "remove",
+      removal: input?.stage === "production" ? "remove" : "remove",
       home: "aws",
       providers: { cloudflare: true },
     };
