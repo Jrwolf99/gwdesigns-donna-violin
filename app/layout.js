@@ -10,13 +10,15 @@ export const metadata = {
   title: 'Donna Wolf Violinist',
   description:
     'Donna Wolf is a violinist that can play for your wedding, party, or event.',
+  fonts: [
+    'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap',
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GoogleAnalytics />
-
       <body className={`font-sans text-black bg-white ${inter.className}`}>
         <NavBar />
         <div>{children}</div>

@@ -31,7 +31,10 @@ export default function Home() {
                 ? 'translate-x-0 xl:-translate-x-[50%]'
                 : '-translate-x-[200%]'
             } p-4 md:p-8 rounded-lg flex flex-col items-center`}
-            style={{ marginTop: '-10vh' }}
+            style={{
+              marginTop: '-10vh',
+              fontFamily: "'Dancing Script', cursive",
+            }}
           >
             <h1 className="text-5xl md:text-[72px] font-bold text-center text-white px-4 md:px-16 pt-16 pb-4 md:leading-[72px] cursive-font">
               Donna Wolf
@@ -73,12 +76,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
-        <style jsx>{`
-          .cursive-font {
-            font-family: 'Dancing Script', cursive;
-          }
-        `}</style>
       </div>
     </div>
   );
