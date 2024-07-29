@@ -27,9 +27,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <div
             className={`transform transition-transform duration-[2000ms] ${
-              textVisible
-                ? 'translate-x-0 xl:-translate-x-[50%]'
-                : '-translate-x-[200%]'
+              textVisible ? 'translate-x-0 ' : '-translate-x-[200%]'
             } p-4 md:p-8 rounded-lg flex flex-col items-center`}
             style={{
               marginTop: '-10vh',
