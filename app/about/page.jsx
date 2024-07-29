@@ -3,14 +3,14 @@ import React from 'react';
 
 export default function AboutUsPage() {
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="py-12">
       <div className="px-6 md:px-10 mx-auto max-w-5xl">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8 py-5">
+        <h1 className="text-4xl font-bold text-center  mb-8 py-5">
           Who is Donna Wolf?
         </h1>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12 mb-12">
           <div className="md:flex-1 md:pr-8 text-center md:text-start">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg  leading-relaxed">
               Donna Wolf, a talented violinist and fiddler from Louisville, KY,
               now resides in Memphis, TN, where she continues to share her
               musical talents. She began her classical violin training at age
@@ -19,7 +19,7 @@ export default function AboutUsPage() {
               Classical.
             </p>
             <div className="bg-gray-500 rounded-lg my-10 h-1 hidden md:block md:w-48" />
-            <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            <p className="text-lg  leading-relaxed mt-4">
               Music is her passion! With a wireless setup, she can easily move
               from table to table. Book Donna and let her elegant and fun fiddle
               create a magical atmosphere for your event!
@@ -37,11 +37,9 @@ export default function AboutUsPage() {
 
         <div className="w-full px-4">
           <div className="mt-8">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Performances
-            </h2>
+            <h2 className="text-3xl font-semibold  mb-4">Performances</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside  space-y-2">
                 <li>
                   <strong>Private Event</strong> – with Fred Smith, CEO of
                   FedEx, Pitt Hyde, founder of AutoZone, and Bill Rhodes, CEO of
@@ -74,7 +72,7 @@ export default function AboutUsPage() {
                   and the Featured Performer for the Stock Exchange
                 </li>
               </ul>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside  space-y-2">
                 <li>
                   <strong>Memphis Italian Festival</strong> – Opened for Eli
                   Young, Gin Blossoms
@@ -136,11 +134,9 @@ export default function AboutUsPage() {
           </div>
 
           <div className="mt-8">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Locations
-            </h2>
+            <h2 className="text-3xl font-semibold  mb-4">Locations</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside  space-y-2">
                 <li>Spring Creek Ranch Golf Club</li>
                 <li>Memphis National Golf Club</li>
                 <li>Ridgeway Country Golf Club</li>
@@ -151,7 +147,7 @@ export default function AboutUsPage() {
                 <li>Memphis Farmers Market</li>
                 <li>Embassy Suites in Little Rock, Arkansas</li>
               </ul>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside  space-y-2">
                 <li>St. Jude Hospital</li>
                 <li>Beale Street Performer</li>
                 <li>Sun Studios Recording Artist</li>
