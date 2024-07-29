@@ -21,7 +21,7 @@ export default function ContactPage() {
             </p>
           </div>
           <Image
-            src="/images/donna_portraits/standing.jpg"
+            src="/images/donna_portraits/red_11.jpeg"
             alt="Donna Wolf"
             className="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm md:w-1/2"
             width={500}
