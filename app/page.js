@@ -14,9 +14,9 @@ export default function Home() {
 
   return (
     <div>
-      <div className="min-h-[80vh] flex flex-col items-center justify-center bg-cover bg-center relative">
+      <div className="min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center relative">
         <Image
-          src="/images/donna_portraits/lights_lookingup1.jpeg"
+          src="/images/donna_portraits/lights_lookingup.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"
