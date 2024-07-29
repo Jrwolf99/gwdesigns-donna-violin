@@ -9,6 +9,11 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("MyWeb");
+    new sst.aws.Nextjs("MyWeb", {
+      domain: {
+        name: "donnawolfviolin.com",
+        dns: sst.cloudflare.dns()
+      }
+    });
   },
 });
