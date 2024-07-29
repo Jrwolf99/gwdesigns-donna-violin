@@ -5,7 +5,7 @@ export default function AboutUsPage() {
   return (
     <div className="py-12">
       <div className="px-6 md:px-10 mx-auto max-w-5xl">
-        <h1 className="text-4xl font-bold text-center  mb-8 py-5">
+        <h1 className="text-4xl font-bold text-center  mb-8 pb-5">
           Who is Donna Wolf?
         </h1>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12 mb-12">
