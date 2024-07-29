@@ -31,6 +31,7 @@ export default function AboutUsPage() {
             className="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm"
             width={500}
             height={500}
+            priority
           />
         </div>
 

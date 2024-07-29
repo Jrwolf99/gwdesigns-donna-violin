@@ -26,6 +26,7 @@ export default function ContactPage() {
             className="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm md:w-1/2"
             width={500}
             height={500}
+            priority
           />
         </div>
       </div>
